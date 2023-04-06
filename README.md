@@ -3,7 +3,12 @@ go package
 
 
 # Package structure
-
+```go
+var logMessage
+var Version // Public
+func internalSum()
+func Sum()  // Public
+```
 
 # How to use
 
