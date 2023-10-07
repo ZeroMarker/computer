@@ -6,8 +6,8 @@ go package
 ```go
 var logMessage
 var Version // Public
-func internalSum()
-func Sum()  // Public
+func internalSum(4)
+func Sum(4, 5)  // Public
 ```
 
 # How to use
@@ -19,9 +19,25 @@ require (
 )
 ```
 
-program.go
+main.go
 ```go
+package main
+
 import (
-  "github.com/ZeroMarker/computer"
+	"github.com/ZeroMarker/computer";
+	"fmt"
 )
+
+func main() {
+	fmt.Println(computer.Sum(4, 5))
+}
+```
+
+Build & Run
+
+```shell
+go mod download
+
+go build
+./hello
 ```
